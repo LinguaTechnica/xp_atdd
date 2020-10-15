@@ -7,8 +7,8 @@
     "test": "jest",
     "features": "cucumber-js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["tdd", "atdd", "acceptance criteria"],
+  "author": "K Hudson",
   "license": "ISC",
   "devDependencies": {
     "@cucumber/cucumber": "^7.0.0-rc.0",
