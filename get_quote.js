@@ -2,7 +2,6 @@ class GetQuotePage {
     constructor() {
         this.serviceType = null;
         this.address = null;
-        this.response_status = 200;
     }
 
     is_valid() {

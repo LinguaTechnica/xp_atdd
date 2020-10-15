@@ -1,4 +1,4 @@
-const { GetQuotePage } = require('./get_quote')
+const { GetQuotePage } = require('./get_quote');
 
 describe('Get Quote Feature', () => {
     let getQuotePage;
@@ -22,11 +22,8 @@ describe('Get Quote Feature', () => {
             });
         });
 
-        // API Tests Example
-        it('should send GET and return 200 OK', () => {
-            expect(getQuotePage.response_status).toBe(200)
-        });
-
+        // API Tests Examples
+        it.todo('should POST to /getQuote and return 200 OK');
         it.todo('should anonymize user location data')
     } )
 
