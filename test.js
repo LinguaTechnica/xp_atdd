@@ -11,14 +11,15 @@ describe('Get Quote Feature', () => {
             it('Then I can see a price quote for the service I chose', function () {
                 getQuotePage.serviceType = 'Home Insurance';
                 getQuotePage.address = '123 Main Street';
-                expect(getQuotePage.is_valid()).toBe(true);
+                expect(getQuotePage.isValid()).toBe(true);
             });
         });
 
         describe('When I leave my home address incomplete', function () {
             it('Then I see a message to provide it', function () {
                 getQuotePage.serviceType = 'Home Insurance';
-                expect(getQuotePage.is_valid()).toBe('Please provide your address.');
+                expect(getQuotePage.isValid()).toBe(false);
+                expect(getQuotePage.getResponse()).toBe('Please select a service.')
             });
         });
 

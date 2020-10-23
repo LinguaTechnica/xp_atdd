@@ -4,13 +4,16 @@ class GetQuotePage {
         this.address = null;
     }
 
-    is_valid() {
+    isValid() {
+        return this.serviceType && this.address !== null;
+    }
+
+    getResponse() {
         if (!this.address && this.serviceType) {
             return 'Please provide your address.'
         } else if (!this.serviceType && this.address) {
             return 'Please select a service.'
         }
-        return this.serviceType && this.address !== null;
     }
 }
 
